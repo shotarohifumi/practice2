@@ -12,6 +12,7 @@ header {
 .header-right {
     font-size: 15px;
     display: flex;
+    padding-top: 10px;
 }
 
 .header-right a img {
@@ -25,11 +26,13 @@ header {
 @media screen and (max-width:760px) {
     header {
         display: block;
+        padding: 10px 50px;
     }
     .header-right ul {
         margin-left: 0; 
     }
     .header-right {
+        margin-top: 10px;
         justify-content: space-around;
     }
 }
