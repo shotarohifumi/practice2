@@ -22,12 +22,15 @@ header {
     margin-left: 20px;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:760px) {
     header {
         display: block;
     }
     .header-right ul {
-        margin-left: 40px; 
+        margin-left: 0; 
+    }
+    .header-right {
+        justify-content: space-around;
     }
 }
 
@@ -35,21 +38,18 @@ header {
     height: 530px;
     width: 100%;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:760px) {
     .main-visual img {
         height: 450px;
+        width: 100%;
     }
-}
-
-input, textarea, button {
-    border: solid black 1px;
 }
 
 main {
     max-width: 880px;
     margin: 100px auto;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:760px) {
     main {
        padding-left: 20px;
        padding-right: 20px; 
@@ -75,7 +75,7 @@ main h1 {
     display: flex;
     justify-content: space-around;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:760px) {
     .pic1, .pic2 {
         display: block;
     }
@@ -85,9 +85,11 @@ main h1 {
     width: 30%;
     margin: 10px;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:760px) {
     .pics img {
         width: 100%;
+        margin: 0;
+        margin-top: 15px;
     }
 }
 
@@ -112,13 +114,13 @@ main h1 {
     padding: 18px;
     border-bottom: solid .5px;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:760px) {
     .newss dl {
         display: block;
     }
     #news dl:first-of-type {
         border-top: solid .5px;
-        max-width: 525px;
+        width: 100%;
     }
     #news dl dt {
         width: 100%;
@@ -130,7 +132,9 @@ main h1 {
         width: 100%;
         padding-top: 0;
         padding-bottom: 15px; 
-        max-width: 525px;
+    }
+    #news dl {
+        font-size: 10px;
     }
 }
 
@@ -160,16 +164,17 @@ main h1 {
     padding: 5px 6px;
     margin: 10px auto;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:760px) {
     .contact-wrap dl {
-        display: block;      
+        display: block;     
+        width: 100%; 
     }
     #contact dl dt {
         width: 100%;
         margin-top: 5px;
     }
     #contact dl dd {
-        max-width: 525px;
+        width: 100%;
         padding: 0;
     }
     #contact dl dd input, textarea {
@@ -185,5 +190,10 @@ footer {
     font-size: 5px;
     padding: 5px;
 }
-
+@media screen and (max-width: 760px) {
+    footer {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
 
