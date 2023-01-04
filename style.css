@@ -3,6 +3,7 @@ header {
     justify-content: space-around;
     text-align: center;
     padding: 50px 50px;
+    margin-top: 50px;
 }
 
 .header-left {
@@ -27,6 +28,7 @@ header {
     header {
         display: block;
         padding: 10px 50px;
+        margin-top: 0px;
     }
     .header-right ul {
         margin-left: 0; 
@@ -37,21 +39,26 @@ header {
     }
 }
 
-.main-visual img {
-    height: 530px;
-    width: 100%;
+main {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.bi {
+    background-repeat: no-repeat;
+    background-size: 113vw;
+    background-position: right center;
+    height: 420px;  
+    margin-top: 50px;
 }
 @media screen and (max-width:760px) {
-    .main-visual img {
-        height: 450px;
-        width: 100%;
+    .bi {
+       height: 400px;
+       margin-top: 10px;
+       background-size: 100vw;
     }
 }
 
-main {
-    max-width: 880px;
-    margin: 100px auto;
-}
 @media screen and (max-width:760px) {
     main {
        padding-left: 20px;
